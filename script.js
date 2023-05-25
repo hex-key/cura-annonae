@@ -14,10 +14,8 @@ var map = L.map('map', {
 function toggle(name) {
     var text = document.getElementById(name);
     if (text.hidden) {
-        console.log("showing");
         text.hidden = false;
     } else {
-        console.log("hiding");
         text.hidden = true;
     }
 }

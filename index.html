@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cura Annonae</title>
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <script src="./script.js" defer></script>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
@@ -15,7 +19,7 @@
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
         crossorigin=""></script>
     
-    <script src="./script.js" defer></script>
+    
   </head>
   <body>
     <div id="text">
@@ -23,7 +27,11 @@
         <h2> [subtitle] </h2>
 
 
-        <button onclick="toggle('view-1-para')"> first view </button>
+        <div id="button-row">
+            <button onclick="toggle('view-1-para')"> first view </button>
+            <button onclick="toggle('view-2-para')"> second view </button>
+        </div>
+
         <p id="view-1-para" hidden="true"> 
             123 BC, Gaius Gracchus and Lex Licinia
 
@@ -32,7 +40,7 @@
             Gaius also implemented the lex agraria land redistribution law that caused Tiberius Gracchus to be murdered - it essentially had the state buy land from wealthy people and gave it to poor people
         </p>
 
-        <button onclick="toggle('view-2-para')"> second view </button>
+        
         <p id="view-2-para" hidden="true"> 
             100 BC - 27 BC, Clodius, Caesar, Pompey, aediles Cereales
 
@@ -51,8 +59,12 @@
 
 
     </div>
-    <div id="map">
-        
-    </div>
+
+    <div id="spacer" style="height: 100px;"></div>
+
+    <div id="map"></div>
+
+    <div id="bottom-text"> Iris Chen - Latin IV - 2023 </div>
+
   </body>
 </html>

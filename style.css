@@ -4,14 +4,27 @@ body {
     background-color: lightskyblue;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 p {
     margin-top: 3px;
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
 }
 
+#button-row {
+    display: inline-block;
+}
+
 #map {
-    height: 800px;
+    height: 500px;
+}
+
+#bottom-text {
+    margin-left: 10px;
+    font-size: 10px;
 }
