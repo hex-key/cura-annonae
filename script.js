@@ -3,10 +3,21 @@ var map = L.map('map', {
     zoom: 13
   });
   
-  var imageUrl = '/assets/orbis_map.svg',
+  var imageUrl = './assets/orbis_map.svg',
     imageBounds = [
       [40.712216, -74.22655],
       [40.773941, -74.12544]
     ];
   
   L.imageOverlay(imageUrl, imageBounds).addTo(map);
+
+function toggle(name) {
+    var text = document.getElementById(name);
+    if (text.hidden) {
+        console.log("showing");
+        text.hidden = false;
+    } else {
+        console.log("hiding");
+        text.hidden = true;
+    }
+}
