@@ -1,7 +1,7 @@
 body {
     font-family: verdana, sans-serif;
     color: #36393F;
-    background-color: hsl(203, 92%, 85%)
+    background-color: #b6e1fc
 }
 
 h1, h2 {
@@ -20,14 +20,20 @@ p {
     font-size: 16px;
 }
 
-iframe {
-    overflow: hidden;
-    
+.nav-button {
+    background-color: #80ceff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
-/* iframe:hover {
-    overflow: auto;
-} */
+.nav-button:hover {
+    background-color: #7fbadf;
+}
 
 #button-row {
     display: inline-block;
@@ -53,4 +59,10 @@ iframe {
     text-align: center;
     margin-left: 10px;
     font-size: 10px;
+}
+
+#navbar {
+    margin: 0 15%;
+    padding: 10px;
+    text-align: center;
 }
