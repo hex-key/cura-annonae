@@ -1,11 +1,15 @@
 body {
     font-family: verdana, sans-serif;
     color: #36393F;
-    background-color: lightskyblue;
+    background-color: hsl(203, 92%, 85%)
 }
 
 h1, h2 {
     text-align: center;
+}
+
+h2 {
+    font-weight: semi-bold;
 }
 
 p {
@@ -24,7 +28,20 @@ p {
     height: 500px;
 }
 
-#bottom-text {
+#essay-view {
+    text-align: center;
+}
+
+#essay-box {
+    width: 700px;
+    height: 800px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+#attribution {
+    text-align: center;
     margin-left: 10px;
     font-size: 10px;
 }
