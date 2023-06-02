@@ -20,6 +20,15 @@ p {
     font-size: 16px;
 }
 
+iframe {
+    overflow: hidden;
+    
+}
+
+/* iframe:hover {
+    overflow: auto;
+} */
+
 #button-row {
     display: inline-block;
 }
@@ -28,11 +37,11 @@ p {
     height: 500px;
 }
 
-#essay-view {
+#reader-view {
     text-align: center;
 }
 
-#essay-box {
+#reader-window {
     width: 700px;
     height: 800px;
     border: 1px solid black;
