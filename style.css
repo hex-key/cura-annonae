@@ -24,6 +24,7 @@ p {
     background-color: #80ceff;
     border: none;
     padding: 10px 20px;
+    margin: auto 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -65,4 +66,7 @@ p {
     margin: 0 15%;
     padding: 10px;
     text-align: center;
+    background-color: #9BD8FE;
+    border-radius: 10px;
+    
 }

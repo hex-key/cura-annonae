@@ -20,54 +20,26 @@
         </div>
 
         <div id="navbar">
-            <button class="nav-button" id="reader-toggle to-essay" onclick="toggleReaderView('essay')">Read Essay</button>
+            <button class="nav-button" type="button" id="view-toggle to-reader" onclick="toggleView()">Reader View</button>
+            <button class="nav-button" type="button" id="reader-toggle to-essay" onclick="toggleReaderMode()">Read Essay</button>
+            <button class="nav-button" type="button" id="map-phase-toggle" onclick="toggleMapPhase()">Cycle Map</button>
         </div>
 
         <div class="spacer" style="height: 25px;"></div>
 
-        <div id="infographic-view" hidden="true">
-            <div id="text">
-                <div id="button-row">
-                    <button onclick="toggle('view-1-para')"> first view </button>
-                    <button onclick="toggle('view-2-para')"> second view </button>
-                </div>
-
-                <!-- there has to be a more efficient way of doing this lol  -->
-                <p id="view-1-para" hidden="true"> 
-                    123 BC, Gaius Gracchus and Lex Licinia
-
-                    Was originally just a price ceiling of 6 ⅓ asses for one modius (unit of measure) of grain, eventual policy was that adult male landowners with income/property under a certain line could buy 33 kg of subsidized grain at five modii (currency)
-
-                    Gaius also implemented the lex agraria land redistribution law that caused Tiberius Gracchus to be murdered - it essentially had the state buy land from wealthy people and gave it to poor people
-                </p>
-
-                
-                <p id="view-2-para" hidden="true"> 
-                    100 BC - 27 BC, Clodius, Caesar, Pompey, aediles Cereales
-
-                    Originally about 40,000 people were eligible 
-
-                    58 BC - Clodius increased to 320,000 and made them free instead of being a price ceiling
-
-                    -- Citizens pushed for Pompey to have more powers to deal with pirates who threatened the grain supply
-
-                    44 BC - Caesar decreased to 150,000 
-
-                    Caesar appointed two Aediles Cereales to be in charge of storage and distribution
-
-                    Period characterized by people beginning to view feeding the citizens as one of the government's self-evident jobs
-                </p>
-
+        <div id="map-view">
+            <div id="map-phase-subtitle">
+                subtitle go here 
             </div>
 
-            <div c;ass="spacer" style="height: 100px;"></div>
+            <div class="spacer" style="height: 100px;"></div>
 
-            <div id="map"> img src</div>
+            <div id="map"> img src </div>
+            <!-- add reference|source|cite [s] for map(s)! -->
         </div>
 
         <!-- displays essay and translation -->
-        <div id="reader-view">
-            <!-- <iframe src="./assets/essay.html" frameBorder="0" id="reader-window"></iframe> -->
+        <div id="reader-view" style="display: none;">
             <iframe src="./assets/translation.html" frameBorder="0" id="reader-window"></iframe>
         </div>
 
