@@ -20,27 +20,22 @@
         </div>
 
         <div id="navbar">
-            <button class="nav-button" type="button" id="view-toggle to-reader" onclick="toggleView()">Reader View</button>
-            <button class="nav-button" type="button" id="reader-toggle to-essay" onclick="toggleReaderMode()">Read Essay</button>
+            <!-- <button class="nav-button" type="button" id="view-toggle to-reader" onclick="toggleView()">Reader View</button> -->
             <button class="nav-button" type="button" id="map-phase-toggle" onclick="toggleMapPhase()">Cycle Map</button>
+            <button class="nav-button" type="button" id="reader-toggle to-translation" onclick="toggleReaderMode()">Read Translation</button>
+            <button class="nav-button" type="button" id="to-cites" onclick="window.location.href='cites.html'">View Citations</button>
         </div>
 
-        <div class="spacer" style="height: 25px;"></div>
-
         <div id="map-view">
-            <div id="map-phase-subtitle">
-                subtitle go here 
+
+            <div id="map"> 
+                <img id="map-src" src="./assets/grain.jpg">
             </div>
-
-            <div class="spacer" style="height: 100px;"></div>
-
-            <div id="map"> img src </div>
-            <!-- add reference|source|cite [s] for map(s)! -->
         </div>
 
         <!-- displays essay and translation -->
-        <div id="reader-view" style="display: none;">
-            <iframe src="./assets/translation.html" frameBorder="0" id="reader-window"></iframe>
+        <div id="reader-view">
+            <iframe src="./assets/essay.html" frameBorder="0" id="reader-window"></iframe>
         </div>
 
         <div class="spacer" style="height: 50px;"></div>

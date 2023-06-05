@@ -20,6 +20,11 @@ p {
     font-size: 16px;
 }
 
+img {
+    width: 900px;
+    height: 600px;
+}
+
 .nav-button {
     background-color: #80ceff;
     border: none;
@@ -36,12 +41,29 @@ p {
     background-color: #7fbadf;
 }
 
+#map-subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#map-blurb {
+    padding-left: 50px;
+}
+
 #button-row {
     display: inline-block;
 }
 
+#map-view {
+    text-align: center;
+}
+
 #map {
-    height: 500px;
+    text-align: center;
+    margin: 50px;
+    /* height: 600px;
+    width: 900px; */
 }
 
 #reader-view {
@@ -66,7 +88,6 @@ p {
     margin: 0 15%;
     padding: 10px;
     text-align: center;
-    background-color: #9BD8FE;
     border-radius: 10px;
     
 }
